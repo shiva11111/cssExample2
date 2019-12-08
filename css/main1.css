@@ -1,0 +1,113 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 1.7;
+  padding: 3rem;
+  overflow: hidden;
+}
+
+.container {
+  border-radius: 2rem;
+  position: relative;
+  color: #fafafa;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(58, 148, 184, 0.774)), to(rgba(0, 243, 142, 0.767))), url(../infinity.jpg);
+  background-image: linear-gradient(to right bottom, rgba(58, 148, 184, 0.774), rgba(0, 243, 142, 0.767)), url(../infinity.jpg);
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  -webkit-clip-path: polygon(100% 0, 100% 74%, 66% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 74%, 66% 100%, 0 100%, 0 0);
+}
+
+.container__side {
+  position: absolute;
+  padding: 0rem;
+  margin: 0 auto;
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.container__side--1 {
+  top: 0;
+  left: 0;
+  -webkit-animation: animation_one 2s linear forwards;
+          animation: animation_one 2s linear forwards;
+}
+
+.container__side--2 {
+  top: 0;
+  right: 0;
+  -webkit-animation: animation_two 2s linear forwards;
+          animation: animation_two 2s linear forwards;
+}
+
+@-webkit-keyframes animation_one {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-10rem, 23rem);
+            transform: translate(-10rem, 23rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(45rem, 23rem);
+            transform: translate(45rem, 23rem);
+  }
+}
+
+@keyframes animation_one {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-10rem, 23rem);
+            transform: translate(-10rem, 23rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(45rem, 23rem);
+            transform: translate(45rem, 23rem);
+  }
+}
+
+@-webkit-keyframes animation_two {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-10rem, 23rem);
+            transform: translate(-10rem, 23rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-45rem, 23rem);
+            transform: translate(-45rem, 23rem);
+  }
+}
+
+@keyframes animation_two {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(-10rem, 23rem);
+            transform: translate(-10rem, 23rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-45rem, 23rem);
+            transform: translate(-45rem, 23rem);
+  }
+}
+/*# sourceMappingURL=main1.css.map */

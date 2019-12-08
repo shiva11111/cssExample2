@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100%;
+  background: #dcf5ff;
+}
+
+.inner {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #13ce96;
+  width: 250px;
+  padding: 1em;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.inner h1 {
+  color: whitesmoke;
+  margin: 0;
+}
+
+.inner p {
+  color: whitesmoke;
+  font-size: 1em;
+}
+
+.inner span {
+  float: right;
+  font-weight: 300;
+  font-size: larger;
+  margin-right: 4%;
+  color: #fcfcfc;
+  -webkit-transition: color 0.5s ease-in;
+  transition: color 0.5s ease-in;
+}
+
+.inner:hover span {
+  color: rgba(252, 252, 252, 0);
+}
+
+.inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #00b6ff;
+}
+/*# sourceMappingURL=main.css.map */
